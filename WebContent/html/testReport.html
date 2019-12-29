@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试报告</title>
+		<!-- 
+		<link rel="stylesheet" type="text/css" href="../js/jquery-easyui/themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css" href="../js/jquery-easyui/themes/icon.css">
+		<link rel="stylesheet" type="text/css" href="../js/jquery-easyui/demo/demo.css">
+		<link rel="stylesheet" type="text/css" href="../css/report.css"> -->
+		<!-- <script type="text/javascript" src="../../jquery.min.js"></script> -->
+		<!-- <script type="text/javascript" src="../js/jquery-easyui/jquery.easyui.min.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="../css/reportTable.css"/>
+
+	</head>
+	
+	<body>
+		<h1 style="text-align: center;">20191230版本测试报告</h1>
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>场景</td>
+				<td>链接</td>
+				<td>方式</td>
+				<td>入参</td>
+				<td>出参</td>
+				<td>状态</td>
+				<td>BugID</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>用户名密码正常输入</td>
+				<td>http://www.baidu.com</td>
+				<td>POST</td>
+				<td>{
+					username:王五,
+					password:111111}</td>
+				<td>{
+					code:200
+					statut:success}</td>
+				<td>pass</td>
+				<td><a href=""></a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>用户名不存在</td>
+				<td>http://www.baidu.com</td>
+				<td>POST</td>
+				<td>{
+					username:张三,
+					password:111111}</td>
+				<td>{
+					code:500
+					statut:"用户名不存在"}</td>
+				<td>erro</td>
+				<td><a href="">#1028</a></td>
+			</tr>
+		</table>
+	</body>
+</html>
